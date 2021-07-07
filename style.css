@@ -1,0 +1,112 @@
+@font-face {
+	font-family: 'Binggrae-Bold';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae-Bold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'NanumBarunpen';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumBarunpen.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+:root {
+	/* color */
+	--color-accent: #580000;
+	--color-white: #ffffff;
+	--color-light-white: #eeeeee;
+	--color-dark-white: #bdbdbd;
+	--color-pink: #fe918d;
+	--color-dark-pink: #ff6863;
+	--color-red: #dc143c;
+	--color-dark-grey: #4d4d4d;
+	--color-grey: #616161;
+	--color-light-grey: #7c7979;
+	--color-blue: #73aace;
+	--color-yellow: #fff7d1;
+	--color-orange: #feb546;
+	--color-purple: #e0d9fc;
+	--color-dark-purple: #a280d6;
+	--color-black: #000000;
+
+	/* Font size */
+	--font-large: 48px;
+	--font-medium: 28px;
+	--font-regular: 18px;
+	--font-small: 16px;
+	--font-micro: 14px;
+
+	/* Font Weight */
+	--weight-bold: 700;
+	--weight-semi-bold: 600;
+	--weight-regular: 400;
+
+	/* Size */
+	--size-border-radius: 4px;
+	
+	/* Animation */
+	--animation-duration: 300ms
+}
+
+/* Universal tag */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	cursor: default;
+}
+
+a {
+	text-decoration: none;
+	color: var(--color-white);
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+button {
+	background-color: transparent;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	padding: 0;
+}
+
+/* font-family */
+.navbar__menu__item {
+	font-family: 'Binggrae-Bold';
+} 
+
+/* Navbar */
+#navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--color-black);
+	padding: 8px 16px;
+}
+
+.navbar__menu {
+	display: flex;
+}
+
+.navbar__menu__item {
+	padding: 12px 16px;
+	cursor: pointer;
+	color: var(--color-white);
+	transition: color 100ms;
+	font-size: var(--font-regular);
+}
+
+.navbar__menu__item:hover {
+	color: var(--color-red)
+}
