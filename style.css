@@ -90,7 +90,8 @@ h3,
 .album__slide-wrap p,
 .album__slide-wrap li,
 dt,
-dd {
+dd,
+.video__btn {
   font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -501,8 +502,31 @@ dd {
 
 /* Music video */
 #mv {
-  height: 900px;
+  height: 1500px;
   background-color: #000000;
+}
+
+.video__categories {
+	display: flex;
+	justify-content: center;
+}
+
+.video__btn {
+	color: var(--color-white);
+	flex-basis: 10%;
+	font-size: var(--font-regular);
+	width: var(--weight-semi-bold);
+	margin-bottom: 30px;
+}
+
+.video__items {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.video__item {
+	margin-bottom: 10px;
 }
 
 /* sns icon */
