@@ -502,7 +502,7 @@ dd,
 
 /* Music video */
 #mv {
-  height: 1500px;
+  height: 1600px;
   background-color: #000000;
 }
 
@@ -527,6 +527,19 @@ dd,
 
 .video__item {
 	margin-bottom: 10px;
+}
+
+/* footer */
+footer {
+	background-color: var(--color-black);
+	color: var(--color-light-white);
+	font-size: var(--font-micro);
+	padding: 50px 0;
+	border-top: 1px solid var(--color-light-white);
+}
+
+footer p {
+	padding: 4px 0;
 }
 
 /* sns icon */
