@@ -725,6 +725,10 @@ footer p {
 		border-bottom: 2px solid var(--color-light-white);
 	}
 
+	.navbar-open {
+		display: block;
+	}
+
 	.navbar__menu__item {
 		padding: 16px;
 	}
