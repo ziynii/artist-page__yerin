@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;600&display=swap"
       rel="stylesheet"
     />
     <script src="main.js" defer></script>
@@ -31,10 +31,21 @@
         <ul class="navbar__menu">
           <li class="navbar__menu__item active" data-link="#home">Home</li>
           <li class="navbar__menu__item" data-link="#news">News</li>
-          <li class="navbar__menu__item" data-link="#about">About</li>
+          <li class="navbar__menu__item" data-link="#album">Album</li>
           <li class="navbar__menu__item" data-link="#gallery">Gallery</li>
-          <li class="navbar__menu__item" data-link="#mv">M/V</li>
+          <li class="navbar__menu__item" data-link="#video">Video</li>
+
+					<li class="nav__sns__icon">
+						<i class="fab fa-facebook-square"></i>
+						<i class="fab fa-youtube"></i>
+						<i class="fab fa-twitter"></i>
+						<i class="fab fa-instagram"></i>
+					</li>
         </ul>
+
+				<button class="navbar__toggle-btn">
+					<i class="fas fa-bars"></i>
+				</button>
       </nav>
     </header>
     <!-- Home -->
@@ -137,20 +148,22 @@
       <div class="section__container">
         <h3>Album</h3>
         <div class="album__slide">
-          <ul class="album__button-wrap">
-            <li class="album__button"><a href="#album-tab1">frank</a></li>
-            <li class="album__button">
+          <div class="album__button-wrap">
+            <button class="album__button">
+							<a href="#album-tab1" class="album-active">frank</a>
+						</button>
+            <button class="album__button">
               <a href="#album-tab2">Our love is great</a>
-            </li>
-            <li class="album__button">
+            </button>
+            <button class="album__button">
               <a href="#album-tab3">Every letter i sent you</a>
-            </li>
-            <li class="album__button">
+            </button>
+            <button class="album__button">
               <a href="#album-tab4">tellusboutyourself</a>
-            </li>
-          </ul>
-          <ul class="album__slide-wrap">
-            <li class="album__slide-item album-item01">
+            </button>
+          </div>
+          <ul class="album__tab-wrap">
+            <li class="album__tab-item album-item01" id="album-tab1">
               <div class="album_content-left">
                 <img src="imgs/album05.jpg" alt="frank 앨범 표지" />
                 <div class="album__info01">
@@ -182,7 +195,7 @@
                     기억과 현재의 나에 대한 생각의 조각을 맞추며 써 내려간
                     가사를 통해 백예린을 둘러싸고 있는 세상을 그려냈다.
                     [FRANK]는 열아홉 소녀 백예린의 마음 속에 담긴 우주는 어떤
-                    빛깔인지 엿볼 수 있는 앨범이 될 것이다.''
+                    빛깔인지 엿볼 수 있는 앨범이 될 것이다.'
                   </p>
                 </div>
                 <div class="tracklist">
@@ -197,7 +210,7 @@
                 </div>
               </div>
             </li>
-            <li class="album__slide-item album-item02">
+            <li class="album__tab-item album-item02" id="album-tab2">
               <div class="album_content-left">
                 <img src="imgs/album06.jpg" alt="Our love is great 앨범 표지" />
                 <div class="album__info01">
@@ -223,7 +236,7 @@
                     - 백예린의 탁월한 음악적 오브제 선택과 순수한 목소리로 완성
                   </p>
                   <p class="info-cap">
-                    디지털 싱글 '우주를 건너', 'Bye bye my blue'로 독보적인
+                    '디지털 싱글 '우주를 건너', 'Bye bye my blue'로 독보적인
                     음색과 음악적 감정선을 선사했던 백예린이 다시 한 번 소중하고
                     섬세한 마음을 전한다. 'Our love is great'는 2015년 11월
                     발매한 첫 미니앨범 'FRANK' 이후 두 번째로 선보이는 디지털
@@ -234,7 +247,7 @@
                     앨범 전곡 작사, 작곡에 이름을 올리며 본인만의 음악 세상을
                     아름답고 서정적으로 표현했다. 백예린은 듣는 이의 마음을
                     유영하는 듯한 영롱한 멜로디 속에서 고운 음색을 드러내며
-                    감미로운 분위기를 완성했다.
+                    감미로운 분위기를 완성했다.'
                   </p>
                 </div>
                 <div class="tracklist">
@@ -260,7 +273,7 @@
                 </div>
               </div>
             </li>
-            <li class="album__slide-item album-item03">
+            <li class="album__tab-item album-item03" id="album-tab3">
               <div class="album_content-left">
                 <img
                   src="imgs/album07.jpg"
@@ -283,11 +296,9 @@
                 <div class="album__info02">
                   <p class="info-title">내가 너에게 보냈던 모든 편지들.</p>
                   <p class="info-cap">
-                    이번 앨범은 19살부터 23살까지 제 생각과 고민, 추억들이
-                    담겨있어요. 정확한 주소가 있진 않았지만 꾸준히 제 마음을
-                    곡에 담아 부치곤 했는데, 이제 여러분들에게 정말로 보낼 수
-                    있게 되어 기쁘네요! 그 동안 저의 성장을 지켜봐 주시고
-                    애정해주신 분들께 감사하는 마음을 담았습니다.
+                    '이번 앨범은 19살부터 23살까지 제 생각과 고민, 추억들이
+                    담겨있어요. 그 동안 저의 성장을 지켜봐 주시고
+                    애정해주신 분들께 감사하는 마음을 담았습니다.'
                     <br />
                     <br />
                     사랑을 담아, 예린 올림.
@@ -312,7 +323,7 @@
                 </div>
               </div>
             </li>
-            <li class="album__slide-item album-item04">
+            <li class="album__tab-item album-item04" id="album-tab4">
               <div class="album_content-left">
                 <img
                   src="imgs/album08.jpg"
@@ -335,7 +346,7 @@
                 <div class="album__info02">
                   <p class="info-title">"우리에게 너의 이야기를 들려줘"</p>
                   <p class="info-cap">
-                    음반은 알앤비, 하우스, 드림 팝, 모던 록을 두루 아우른다.
+                    '음반은 알앤비, 하우스, 드림 팝, 모던 록을 두루 아우른다.
                     몽환적이다가도 파워가 실린 전개로 쭉 밀고 나갈 줄 알고,
                     절묘하게 기어를 변속하면서 분위기를 스윽 전환한다.
                     비유하자면 백예린의 세계에서는 구심과 원심이 역설이지만
@@ -343,7 +354,7 @@
                     질감을 길어낼 줄 안다. 비단 14라는 양감 때문만은 아니다.
                     신보 [tellusboutyourself]를 듣는다는 건 곧 다채로운 텍스쳐를
                     즐기는 행위와 다름없다. 뭐랄까. 자기 세계의 중심이 확고한
-                    동시에 변용에 능한 뮤지션만이 해낼 수 있을 어떤 경지다.
+                    동시에 변용에 능한 뮤지션만이 해낼 수 있을 어떤 경지다.'
                   </p>
                 </div>
                 <div class="tracklist">
@@ -429,12 +440,12 @@
     </section>
 
     <!-- M/V -->
-    <section id="mv">
+    <section id="video">
       <div class="section__container">
         <h3>Video</h3>
         <div class="video__wrap">
           <div class="video__categories">
-            <button class="video__btn" data-filter="all">ALL</button>
+            <button class="video__btn video__selected" data-filter="*">ALL</button>
             <button class="video__btn" data-filter="mv">M/V</button>
             <button class="video__btn" data-filter="live">LIVE</button>
           </div>
@@ -534,11 +545,11 @@
 
     <!-- Footer -->
     <footer>
-			<div class="section__container">
-				<p>Copyright ⓒ Blue Vinyl</p>
-				<p>All rights reserved.</p>
-			</div>
-		</footer>
+
+        <p>Copyright ⓒ Blue Vinyl</p>
+        <p>All rights reserved.</p>
+
+    </footer>
 
     <!-- sns icon -->
     <div class="sns__icon">
