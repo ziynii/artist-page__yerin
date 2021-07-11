@@ -155,6 +155,7 @@ dd,
 #home {
   width: 100%;
 	height: 100vw;
+	min-height: 800px;
 }
 
 .bg__video {
@@ -761,12 +762,21 @@ footer p {
 		padding: 10px 0;
 	}
 
+	#album {
+		height: 900px;
+	}
+
 	.album__tab-item {
 		width: 100%;
+		height: 600px;
 	}
 
 	.album_content-left {
 		margin: auto;
+	}
+
+	.album_content-left img {
+		width: 100%;
 	}
 
 	.album__content-right {
@@ -775,11 +785,12 @@ footer p {
 
 	.gall__img {
 		width: 80%;
-		height: 80%;
+		height: 300px;
 	}
 
 	.con__img {
 		width: 100%;
+		height: 100%;
 	}
 
 
