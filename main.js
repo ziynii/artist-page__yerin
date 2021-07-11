@@ -9,7 +9,7 @@ navbarMenu.addEventListener('click', (e) => {
   if (link == null) {
     return;
   }
-
+	navbarMenu.classList.remove('navbar-open');
   const scrollTo = document.querySelector(link);
   scrollTo.scrollIntoView({ behavior: 'smooth' });
 
@@ -18,6 +18,11 @@ navbarMenu.addEventListener('click', (e) => {
     target.classList.add('active');
   }
 });
+
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+	navbarMenu.classList.toggle('navbar-open');
+})
 
 // album tab menu
 const albumTargetLink = document.querySelectorAll('.album__button a');
